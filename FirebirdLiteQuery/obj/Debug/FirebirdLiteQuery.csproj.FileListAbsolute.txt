@@ -1,0 +1,9 @@
+d:\С#\Firebird lite query\FirebirdLiteQuery\bin\Debug\FirebirdLiteQuery.dll
+d:\С#\Firebird lite query\FirebirdLiteQuery\bin\Debug\FirebirdLiteQuery.pdb
+d:\С#\Firebird lite query\FirebirdLiteQuery\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+d:\С#\Firebird lite query\FirebirdLiteQuery\obj\Debug\FirebirdLiteQuery.csproj.AssemblyReference.cache
+d:\С#\Firebird lite query\FirebirdLiteQuery\obj\Debug\FirebirdLiteQuery.csproj.CoreCompileInputs.cache
+d:\С#\Firebird lite query\FirebirdLiteQuery\obj\Debug\FirebirdLiteQuery.csproj.CopyComplete
+d:\С#\Firebird lite query\FirebirdLiteQuery\obj\Debug\FirebirdLiteQuery.dll
+d:\С#\Firebird lite query\FirebirdLiteQuery\obj\Debug\FirebirdLiteQuery.pdb
+d:\С#\Firebird lite query\FirebirdLiteQuery\bin\Debug\Newtonsoft.Json.dll

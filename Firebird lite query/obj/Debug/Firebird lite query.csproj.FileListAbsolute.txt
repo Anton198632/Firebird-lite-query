@@ -1,0 +1,13 @@
+d:\С#\Firebird lite query\Firebird lite query\bin\Debug\Firebird lite query.exe.config
+d:\С#\Firebird lite query\Firebird lite query\bin\Debug\Firebird lite query.exe
+d:\С#\Firebird lite query\Firebird lite query\bin\Debug\Firebird lite query.pdb
+d:\С#\Firebird lite query\Firebird lite query\bin\Debug\FirebirdLiteQuery.dll
+d:\С#\Firebird lite query\Firebird lite query\bin\Debug\FirebirdSql.Data.FirebirdClient.dll
+d:\С#\Firebird lite query\Firebird lite query\bin\Debug\FirebirdLiteQuery.pdb
+d:\С#\Firebird lite query\Firebird lite query\obj\Debug\Firebird lite query.csproj.AssemblyReference.cache
+d:\С#\Firebird lite query\Firebird lite query\obj\Debug\Firebird lite query.csproj.SuggestedBindingRedirects.cache
+d:\С#\Firebird lite query\Firebird lite query\obj\Debug\Firebird lite query.csproj.CoreCompileInputs.cache
+d:\С#\Firebird lite query\Firebird lite query\obj\Debug\Firebird lite query.csproj.CopyComplete
+d:\С#\Firebird lite query\Firebird lite query\obj\Debug\Firebird lite query.exe
+d:\С#\Firebird lite query\Firebird lite query\obj\Debug\Firebird lite query.pdb
+d:\С#\Firebird lite query\Firebird lite query\bin\Debug\Newtonsoft.Json.dll
