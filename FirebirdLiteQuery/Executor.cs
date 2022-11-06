@@ -53,16 +53,29 @@ namespace FirebirdLiteQuery
                 for (int i = 0; i< dr.FieldCount; i++)
                 {
                     string fieldName = dr.GetName(i).ToLower();
-                    switch (dr.GetValue(i).GetType().Name)
+                    string fieldType = dr.GetValue(i).GetType().Name;
+                    switch (fieldType)
                     {
+                        case "Int16":
+                            values.Add(fieldName, dr.GetInt16(i));
+                            break;
                         case "Int32":
                             values.Add(fieldName, dr.GetInt32(i));
+                            break;
+                        case "Int64":
+                            values.Add(fieldName, dr.GetInt64(i));
                             break;
                         case "String":
                             values.Add(fieldName, dr.GetString(i));
                             break;
                         case "Byte[]":
                             values.Add(fieldName, Convert.ToBase64String((byte[])dr.GetValue(i)));
+                            break;
+                        case "Decimal":
+                            values.Add(fieldName, dr.GetDecimal(i));
+                            break;
+                        case "DateTime":
+                            values.Add(fieldName, dr.GetDateTime(i));
                             break;
                     }
                     
