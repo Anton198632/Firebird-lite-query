@@ -166,5 +166,12 @@ namespace FirebirdLiteQuery
             return JsonConvert.SerializeObject(new Dictionary<string, object>() { { "result", "OK" } });
         }
 
+        public static Dictionary<string, byte[]> CreateParameters()
+        {
+            Dictionary<string, byte[]> result = new Dictionary<string, byte[]>();
+            return result;
+        }
+
+
     }
 }
