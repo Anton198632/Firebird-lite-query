@@ -123,5 +123,48 @@ namespace FirebirdLiteQuery
             return JsonConvert.SerializeObject(new Dictionary<string, object>() { { "result", "OK" } });
         }
 
+        public static string ExecuteNonQuery(string commandText, Dictionary<string, byte[]> parameters)
+        {
+            FbConnection connection = Connector.GetConnection();
+            if (connection == null)
+            {
+                return JsonConvert.SerializeObject(new Dictionary<string, object>() { { "error", "failed connection" } });
+
+            }
+            FbTransaction transaction = connection.BeginTransaction();
+            FbCommand command = new FbCommand();
+            command.Connection = connection;
+            command.Transaction = transaction;
+
+
+            foreach(KeyValuePair<string, byte[]> parameter in parameters)
+            {
+                command.Parameters.Add(parameter.Key, FbDbType.Binary);
+                command.Parameters[parameter.Key].Value = parameter.Value;
+            }
+            
+
+            command.CommandText = commandText;
+
+            string error = null;
+            try
+            {
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                transaction.Rollback();
+                error = JsonConvert.SerializeObject(new Dictionary<string, object>() { { "error", ex.Message } });
+            }
+
+            if (error != null)
+            {
+                return error;
+
+            }
+            transaction.Commit();
+            return JsonConvert.SerializeObject(new Dictionary<string, object>() { { "result", "OK" } });
+        }
+
     }
 }
